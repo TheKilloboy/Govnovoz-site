@@ -1,0 +1,23 @@
+<svg width="150" height="40" viewBox="0 0 150 40" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .truck-body { fill: #E25E3E; }
+    .window { fill: #C6EBC5; }
+    .wheels { fill: #333; }
+    .speed-lines { stroke: #fff; stroke-width: 2; }
+  </style>
+
+  <!-- Truck Body -->
+  <path class="truck-body" d="M 10 20 L 10 35 L 80 35 L 80 20 L 60 20 L 60 10 L 30 10 L 10 20 Z" />
+
+  <!-- Window -->
+  <rect class="window" x="15" y="12" width="10" height="8" />
+
+  <!-- Wheels -->
+  <circle class="wheels" cx="25" cy="35" r="5" />
+  <circle class="wheels" cx="70" cy="35" r="5" />
+
+  <!-- Speed Lines -->
+  <path class="speed-lines" d="M 90 22 L 110 22" />
+  <path class="speed-lines" d="M 95 28 L 120 28" />
+  <path class="speed-lines" d="M 90 34 L 115 34" />
+</svg>
