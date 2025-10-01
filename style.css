@@ -56,9 +56,9 @@ body {
 .hero {
     background: #FF9B50;
     color: white;
-    padding: 100px 20px;
+    padding: 60px 20px;
     text-align: center;
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 80% 92%, 50% 95%, 20% 92%, 0 85%);
 }
 
 .hero h1 {
@@ -96,7 +96,7 @@ body {
 
 .features {
     max-width: 1200px;
-    margin: 100px auto;
+    margin: 60px auto;
     padding: 0 20px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -139,7 +139,7 @@ body {
 
 .pricing {
     background: #C6EBC5;
-    padding: 100px 20px;
+    padding: 60px 20px;
 }
 
 .pricing h2 {
@@ -249,7 +249,7 @@ body {
 
 .testimonials {
     background: #C6EBC5;
-    padding: 100px 20px;
+    padding: 60px 20px;
 }
 
 .testimonials h2 {
@@ -301,7 +301,7 @@ body {
 
 .how-it-works {
     max-width: 1200px;
-    margin: 100px auto;
+    margin: 60px auto;
     padding: 0 20px;
     text-align: center;
 }
@@ -348,7 +348,7 @@ body {
 
 .team {
     background: #fff;
-    padding: 100px 20px;
+    padding: 60px 20px;
 }
 
 .team-container {
@@ -404,8 +404,8 @@ body {
 }
 
 .contact-section {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .contact-container {
