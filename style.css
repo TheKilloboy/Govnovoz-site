@@ -764,6 +764,10 @@ body {
     font-weight: bold;
 }
 
+body.no-scroll {
+    overflow: hidden;
+}
+
 @media (max-width: 768px) {
     .header-content {
         padding: 0 15px;
