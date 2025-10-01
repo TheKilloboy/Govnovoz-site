@@ -88,4 +88,14 @@ document.addEventListener("DOMContentLoaded", function() {
             }, 500);
         });
     }
+
+    // Hamburger menu functionality
+    const hamburger = document.querySelector('.hamburger-menu');
+    const mobileNav = document.querySelector('.mobile-nav');
+
+    if (hamburger && mobileNav) {
+        hamburger.addEventListener('click', () => {
+            mobileNav.classList.toggle('is-active');
+        });
+    }
 });
