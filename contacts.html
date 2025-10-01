@@ -47,18 +47,18 @@
             </div>
 
             <div class="contact-form">
-                <h3>Форма обратной связи (не работает)</h3>
-                <form id="contact-form">
+                <h3>Форма обратной связи</h3>
+                <form action="mailto:info@govnovoz.nikitka.pro" method="post" enctype="text/plain">
                     <div class="form-group">
-                        <input type="text" placeholder="Ваше имя">
+                        <input type="text" name="name" placeholder="Ваше имя" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="Ваш Email (чтобы мы знали, куда не отвечать)">
+                        <input type="email" name="mail" placeholder="Ваш Email" required>
                     </div>
                     <div class="form-group">
-                        <textarea placeholder="Ваше сообщение (будет отправлено в никуда)" rows="5"></textarea>
+                        <textarea name="message" placeholder="Ваше сообщение" rows="5" required></textarea>
                     </div>
-                    <button type="submit" class="cta-button form-button">Отправить в пустоту</button>
+                    <button type="submit" class="cta-button form-button">Отправить</button>
                 </form>
             </div>
         </div>
