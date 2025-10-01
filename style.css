@@ -713,20 +713,131 @@ body {
     transform: translateY(0);
 }
 
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1010;
+}
+
+.hamburger-menu .hamburger-line {
+    width: 2rem;
+    height: 0.25rem;
+    background: white;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+    position: relative;
+    transform-origin: 1px;
+}
+
+.mobile-nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100vh;
+    width: 100%;
+    background: #333;
+    transition: left 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.mobile-nav.is-active {
+    left: 0;
+    display: flex;
+}
+
+.mobile-nav a {
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 @media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2rem;
+    .header-content {
+        padding: 0 15px;
     }
 
-    .hero p {
-        font-size: 1.2rem;
+    .logo img {
+        max-width: 150px;
     }
-
+    
     .nav {
         display: none;
     }
 
-    .features, .pricing-cards, .testimonial-cards {
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .hero {
+        padding: 60px 20px;
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+        margin-bottom: 30px;
+    }
+
+    .cta-button {
+        padding: 15px 30px;
+        font-size: 1rem;
+    }
+
+    .features, .how-it-works, .faq {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .pricing, .testimonials, .team, .special-services, .contact-section {
+        padding: 60px 20px;
+    }
+
+    h2, .faq-title, .contact-title {
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+
+    .features, .pricing-cards, .testimonial-cards, .steps, .team-members, .footer-content, .service-cards {
         grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .feature-card, .pricing-card, .testimonial-card, .step-card, .team-member, .service-card, .contact-form {
+        padding: 25px;
+    }
+
+    .price {
+        font-size: 2.5rem;
+    }
+
+    .footer-content {
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    .modal-content {
+        padding: 30px;
+        width: 90%;
+        max-width: 400px;
     }
 }
