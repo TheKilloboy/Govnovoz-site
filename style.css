@@ -94,6 +94,7 @@ body {
 .cta-button:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(226, 94, 62, 0.6);
+    background: #FF9B50;
 }
 
 .features {
@@ -118,6 +119,7 @@ body {
 .feature-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+    border-color: #FF9B50;
 }
 
 .feature-icon {
@@ -171,6 +173,7 @@ body {
 .pricing-card:hover {
     border-color: #E25E3E;
     transform: scale(1.03);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
 .pricing-card.featured {
@@ -243,6 +246,7 @@ body {
 .order-button:hover {
     background: #FF9B50;
     transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(226, 94, 62, 0.4);
 }
 
 .testimonials {
@@ -271,6 +275,12 @@ body {
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
 }
 
 .testimonial-text {
@@ -473,6 +483,111 @@ body {
 .feature-button {
     margin-top: 20px;
     background: #333;
+    transition: background 0.3s;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+}
+
+.shake {
+  animation: shake 0.5s ease-in-out;
+}
+
+.feature-button:hover {
+    background: #E25E3E;
+}
+
+.faq {
+    max-width: 1000px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+.faq-title {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 60px;
+}
+
+.faq-item {
+    margin-bottom: 30px;
+}
+
+.faq-item h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    color: #333;
+    line-height: 1.6;
+}
+
+.services-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.services-header h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.services-header p {
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.special-services {
+    background: #fff;
+    padding: 80px 20px;
+}
+
+.special-services-container {
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.special-services h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 60px;
+}
+
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.service-card {
+    background: #A4C3A2;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #e9ecef;
+}
+
+.service-card h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    color: #333;
+    line-height: 1.6;
 }
 
 .footer {
@@ -557,6 +672,17 @@ body {
     transform: translateY(-2px);
     background: #FF9B50;
     box-shadow: 0 4px 15px rgba(226, 94, 62, 0.4);
+}
+
+.fade-in-element {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-element.is-visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 @media (max-width: 768px) {
