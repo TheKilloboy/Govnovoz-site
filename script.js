@@ -77,20 +77,6 @@ document.addEventListener("DOMContentLoaded", function() {
         handleScrollAnimation();
     });
 
-    // Contact form shake animation
-    const contactForm = document.getElementById("contact-form");
-    if (contactForm) {
-        contactForm.addEventListener("submit", function(event) {
-            event.preventDefault();
-            const button = contactForm.querySelector("button");
-            button.classList.add("shake");
-            alert('Мы же сказали, что форма не работает. Но спасибо за попытку!');
-            setTimeout(() => {
-                button.classList.remove("shake");
-            }, 500);
-        });
-    }
-
     // Hamburger menu functionality
     const hamburger = document.querySelector('.hamburger-menu');
     const mobileNav = document.querySelector('.mobile-nav');
