@@ -588,6 +588,33 @@ body {
     line-height: 1.6;
 }
 
+.about-section {
+    padding: 80px 20px;
+}
+
+.about-history {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-history h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    color: #8B4513;
+    margin-bottom: 30px;
+}
+
+.about-history p {
+    color: #666;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.about-history p + p {
+    margin-top: 20px;
+}
+
 .footer {
     background: #333;
     color: white;
@@ -615,6 +642,7 @@ body {
     text-decoration: none;
     margin-bottom: 10px;
     transition: opacity 0.3s;
+    display: block;
 }
 
 .footer-column a:hover {
@@ -736,6 +764,18 @@ body {
     transform-origin: 1px;
 }
 
+.hamburger-menu.is-active .hamburger-line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger-menu.is-active .hamburger-line:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.is-active .hamburger-line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
 .mobile-nav {
     display: none;
     flex-direction: column;
@@ -787,7 +827,7 @@ body.no-scroll {
 
     .hero {
         padding: 60px 20px;
-        clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
     }
 
     .hero h1 {
