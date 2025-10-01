@@ -84,6 +84,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if (hamburger && mobileNav) {
         hamburger.addEventListener('click', () => {
             mobileNav.classList.toggle('is-active');
+            document.body.classList.toggle('no-scroll');
         });
     }
 });
