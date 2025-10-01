@@ -32,9 +32,6 @@ body {
 }
 
 .logo {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
-    font-weight: 900;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -99,18 +96,18 @@ body {
 
 .features {
     max-width: 1200px;
-    margin: 80px auto;
+    margin: 100px auto;
     padding: 0 20px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 40px;
+    gap: 60px;
 }
 
 .feature-card {
-    background: #A4C3A2;
+    background: linear-gradient(145deg, #A4C3A2, #C6EBC5);
     padding: 40px;
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
     transition: all 0.3s;
     text-align: center;
     border: 2px solid #E25E3E;
@@ -142,7 +139,7 @@ body {
 
 .pricing {
     background: #C6EBC5;
-    padding: 80px 20px;
+    padding: 100px 20px;
 }
 
 .pricing h2 {
@@ -162,12 +159,13 @@ body {
 }
 
 .pricing-card {
-    background: #A4C3A2;
+    background: linear-gradient(145deg, #A4C3A2, #C6EBC5);
     padding: 40px;
     border-radius: 20px;
     border: 2px solid #A4C3A2;
     transition: all 0.3s;
     text-align: center;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
 }
 
 .pricing-card:hover {
@@ -251,7 +249,7 @@ body {
 
 .testimonials {
     background: #C6EBC5;
-    padding: 80px 20px;
+    padding: 100px 20px;
 }
 
 .testimonials h2 {
@@ -267,14 +265,14 @@ body {
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+    gap: 40px;
 }
 
 .testimonial-card {
-    background: #A4C3A2;
+    background: linear-gradient(145deg, #A4C3A2, #C6EBC5);
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
     transition: all 0.3s;
 }
 
@@ -303,7 +301,7 @@ body {
 
 .how-it-works {
     max-width: 1200px;
-    margin: 80px auto;
+    margin: 100px auto;
     padding: 0 20px;
     text-align: center;
 }
@@ -350,7 +348,7 @@ body {
 
 .team {
     background: #fff;
-    padding: 80px 20px;
+    padding: 100px 20px;
 }
 
 .team-container {
@@ -406,8 +404,8 @@ body {
 }
 
 .contact-section {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .contact-container {
@@ -600,6 +598,36 @@ body {
 .footer-content {
     max-width: 1200px;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    text-align: left;
+}
+
+.footer-column h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.footer-column a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: opacity 0.3s;
+}
+
+.footer-column a:hover {
+    opacity: 0.8;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons a {
+    font-size: 1.5rem;
 }
 
 .disclaimer {
