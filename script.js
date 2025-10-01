@@ -8,6 +8,8 @@ document.addEventListener("DOMContentLoaded", function() {
         const times = {
             'Базовый': '30 минут',
             'Премиум': '15 минут',
+            'Бизнес-ланч': 'к обеду',
+            'Королевский': 'на карете',
             'VIP': '10 минут'
         };
         
